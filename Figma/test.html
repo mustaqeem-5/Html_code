@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu Bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* --- Original Style --- */
+    .menu-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      font-weight: 500;
+      border-top: 1px solid #E2E2E2;
+      padding: 10px 20px;
+    }
+
+    .menu-right {
+      font-weight: 300;
+      font-size: 15px;
+    }
+
+    .menu-bar a {
+      text-decoration: none;
+      color: #0065a5;
+    }
+
+    .menu-left a {
+      margin: 7px;
+    }
+
+    /* --- Mobile Toggle Icon --- */
+    .menu-toggle {
+      display: none;
+      font-size: 1.6em;
+      color: #0065a5;
+      cursor: pointer;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 425px)  {
+      .menu-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-left,
+      .menu-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+      }
+
+      .menu-left.show,
+      .menu-right.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        align-self: flex-end;
+      }
+
+      .menu-left a,
+      .menu-right a {
+        padding: 10px 20px;
+        border-top: 1px solid #E2E2E2;
+      }
+
+      .menu-left a:hover {
+        background: #f2f2f2;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- menu-bar -->
+  <div class="menu-bar">
+    <!-- Arrow Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-angle-right"></i>
+    </div>
+
+    <!-- Left Menu -->
+    <div class="menu-left" id="menu-left">
+      <a>Home</a>
+      <a>Shop <i class="fa-solid fa-angle-down"></i></a>
+      <a>About <i class="fa-solid fa-angle-down"></i></a>
+      <a>The Issue <i class="fa-solid fa-angle-down"></i></a>
+      <a>Curriculum <i class="fa-solid fa-angle-down"></i></a>
+      <a>Tarrant Country Scheduling Request</a>
+    </div>
+
+    <!-- Right Menu -->
+    <div class="menu-right" id="menu-right">
+      <a>Contact Us:</a>
+      <a>info@playitsafe.org</a>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const leftMenu = document.getElementById('menu-left');
+    const rightMenu = document.getElementById('menu-right');
+    let isOpen = false;
+
+    toggleBtn.addEventListener('click', () => {
+      isOpen = !isOpen;
+      leftMenu.classList.toggle('show');
+      rightMenu.classList.toggle('show');
+
+      // Change arrow direction
+      toggleBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-angle-down"></i>'
+        : '<i class="fa-solid fa-angle-right"></i>';
+    });
+  </script>
+
+</body>
+</html>

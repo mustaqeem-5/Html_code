@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayItSafe</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+  <!-- Manrope font (zip file ki jagah Google Fonts use kar lo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+  <!-- TOP OFFER BAR -->
+  <div class="bg-primary text-white p-2 text-center">
+    All books at least 50% off list prices every day
+  </div>
+
+  <!-- SEARCH BAR -->
+  <header class="search-bar bg-secondary">
+    <div class="logo">
+      <img src="logo-Photoroom.png" alt="Play It Safe Logo">
+    </div>
+
+    <div class="but toggle-group">
+      <button class="btn btn-sm bg-primary text-white btn-round-50">
+        For Schools / Organizations
+      </button>
+      <span class="text-light-grey divider">|</span>
+      <button class="btn btn-sm bg-secondary text-primary">
+        For Parents/Individuals
+      </button>
+    </div>
+
+    <div class="input-with-button">
+      <input class="btn search-box" placeholder="Search Products.." />
+      <button class="btn btn-sm bg-primary text-white btn-round-50">
+        <i class="fa-solid fa-magnifying-glass"></i> Search
+      </button>
+    </div>
+
+    <div class="but lang-login">
+      <button class="btn btn-sm bg-secondary text-grey-5">
+        ENG <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <span class="text-light-grey divider">|</span>
+      <button class="btn btn-sm bg-secondary text-grey-5">
+        Login <i class="fa-solid fa-envelope"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MENU BAR -->
+  <nav class="menu-wrapper">
+    <div class="menu-bar">
+      <!-- Mobile toggle -->
+      <button class="menu-toggle text-primary" id="menu-toggle">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+
+      <!-- Logo for mobile -->
+      <p class="safe text-primary font-bold">
+        Play It Safe! &reg;
+      </p>
+
+      <!-- Left Menu -->
+      <div class="menu-left" id="menu-left">
+        <div class="logo-2">
+          <img src="logo-Photoroom.png" class="play-safe-1" alt="Play It Safe Logo">
+        </div>
+        <a href="#">Home</a>
+        <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#">About <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#">The Issue <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#">Curriculum <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#" class="m">Tarrant Country Scheduling Request</a>
+      </div>
+
+      <!-- Right Menu -->
+      <div class="menu-right" id="menu-right">
+        <a>Contact Us:</a>
+        <a class="menu-right-info" href="mailto:info@playitsafe.org">info@playitsafe.org</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-left">
+      <p class="Welcome text-grey-3 font-bold">
+        Welcome to Play It Safe! <sup>&reg;</sup>
+      </p>
+      <h1 class="text-primary hero-title">
+        Empowering Children To Stay Safe
+      </h1>
+      <p class="hero-subtitle">
+        Providing age-appropriate abuse prevention education from pre-K to high school.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-md btn-round-10 text-white bg-primary">
+          Shop Now <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="btn btn-md btn-round-10 text-white bg-primary">
+          About us <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="kid.png" alt="Kid" class="hero-img">
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee-wrap">
+    <marquee direction="right" class="marquee text-primary">
+      <span><i class="fa-solid fa-asterisk"></i> 15,254 total books</span>
+      <span><i class="fa-solid fa-asterisk"></i> 1,258 authors</span>
+      <span><i class="fa-solid fa-asterisk"></i> 20,898 books sold</span>
+      <span><i class="fa-solid fa-asterisk"></i> 97% happy customer</span>
+    </marquee>
+  </section>
+
+  <!-- SECOND SECTION -->
+  <section class="second-section section-padding">
+    <div class="second-img">
+      <img src="boys.jpg" alt="Boys" />
+    </div>
+
+    <div class="second-text bg-primary text-white">
+      <h3>
+        One Grade Level at a Time<br />
+        One Classroom Level at a Time
+      </h3>
+      <p>
+        Play it safe! <sup>&reg;</sup> offers a ready-to-teach, one-hour Curriculum
+        with all materials included for easy implementation by educators or counselors.
+      </p>
+      <button class="btn btn-md btn-round-10 text-primary bg-white">
+        Our Mission <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="second-img">
+      <img src="girl.png" alt="Girl">
+    </div>
+  </section>
+
+  <!-- THIRD SECTION -->
+  <section class="third-section section-padding">
+    <div class="third-left">
+      <img src="Group .png" class="third-img" alt="About the Issue Image">
+    </div>
+
+    <div class="third-right">
+      <h2 class="text-grey-3">About the Issue</h2>
+      <h1 class="text-primary">Every Child Deserves To Feel Safe</h1>
+      <p>
+        Child abuse is a pervasive issue affecting communities worldwide. It
+        transcends socioeconomic boundaries, leaving a lasting impact on children's
+        physical, emotional, and mental well-being. At Play it Safe!, we're committed
+        to empowering children and the adults in their lives with the tools to
+        recognize, prevent, and respond to abuse.
+      </p>
+      <button class="btn btn-md btn-round-10 text-white bg-primary">
+        The Issue <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- 4TH SECTION - SHOP -->
+  <section class="forth-section section-padding">
+    <div class="section-heading">
+      <h2 class="text-grey-3">Our Shop</h2>
+      <h1 class="text-primary">Our Best Sellers</h1>
+      <p>
+        Explore our top-selling e-books that readers can't get enough of! These titles
+        are flying off the virtual shelves and are a must-read for any book lover.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="child.png" alt="Bentley’s Big Production">
+        <div class="card-body">
+          <h3>Bentley’s Big Production</h3>
+          <p>Elementary</p>
+          <div class="price">$229</div>
+          <button class="btn-2">
+            <i class="fa-solid fa-cart-shopping"></i> Add
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="dog.png" alt="Tick Tock Plays it Safe!">
+        <div class="card-body">
+          <h3>Tick Tock Plays it Safe!</h3>
+          <p>Pre-K</p>
+          <div class="price">$229</div>
+          <button class="btn-2">
+            <i class="fa-solid fa-cart-shopping"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards-actions">
+      <div class="btn-group">
+        <button class="btn btn-round-10 btn-border bg-secondary">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="btn btn-round-10 bg-primary text-white btn2-border">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-round-10 bg-secondary text-primary btn2-border">
+          View All
+        </button>
+        <button class="btn btn-round-10 bg-primary text-white btn2-border">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5TH SECTION - CURRICULUM -->
+  <section class="section-padding bg-white">
+    <div class="section-heading">
+      <h2 class="text-grey-3">Curriculums</h2>
+      <h1 class="text-primary">Curriculums by Grade</h1>
+      <p>
+        Explore our top-selling e-books that readers can't get enough of! These titles
+        are a must-read for any book lover.
+      </p>
+    </div>
+
+    <div class="curriculum-grid">
+      <div class="curriculum-card">
+        <img src="litttle-kids.png" alt="Pre-K">
+        <div class="curriculum-body">
+          <p class="text-primary">Pre-K</p>
+          <p class="text-light-grey">
+            This science fiction genre explores imaginative and futuristic...
+          </p>
+          <button class="btn btn-md btn-round-10 bg-primary text-white">
+            See Collection
+          </button>
+        </div>
+      </div>
+
+      <div class="curriculum-card">
+        <img src="teach.png" alt="Elementary">
+        <div class="curriculum-body">
+          <p class="text-primary">Elementary</p>
+          <p class="text-light-grey">
+            This science fiction genre explores imaginative and futuristic...
+          </p>
+          <button class="btn btn-md btn-round-10 bg-primary text-white">
+            See Collection
+          </button>
+        </div>
+      </div>
+
+      <div class="curriculum-card">
+        <img src="girl-board.png" alt="Middle School">
+        <div class="curriculum-body">
+          <p class="text-primary">Middle School</p>
+          <p class="text-light-grey">
+            This science fiction genre explores imaginative and futuristic...
+          </p>
+          <button class="btn btn-md btn-round-10 bg-primary text-white">
+            See Collection
+          </button>
+        </div>
+      </div>
+
+      <div class="curriculum-card">
+        <img src="student.png" alt="High School">
+        <div class="curriculum-body">
+          <p class="text-primary">High School</p>
+          <p class="text-light-grey">
+            This science fiction genre explores imaginative and futuristic...
+          </p>
+          <button class="btn btn-md btn-round-10 bg-primary text-white">
+            See Collection
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6TH SECTION - REVIEWS -->
+  <section class="ratings section-padding">
+    <div class="rating-wrapper">
+      <div class="rating-left">
+        <img src="green.png" class="img-text" alt="">
+        <div class="rating-text">
+          <p class="six">Proof Point</p>
+          <h1>Our Product Reviews</h1>
+        </div>
+      </div>
+      <div class="rating-right">
+        <div class="mark">
+          <div class="stars">
+            <i class="fa-solid fa-star text-red"></i>
+            <i class="fa-solid fa-star text-red"></i>
+            <i class="fa-solid fa-star text-red"></i>
+            <i class="fa-solid fa-star text-red"></i>
+            <i class="fa-solid fa-star text-red"></i>
+          </div>
+          <p class="text-light-grey">
+            "The online book fairs are fantastic! I've discovered so many authors."
+          </p>
+          <h2 class="text-primary">Mark R.</h2>
+          <h3 class="text-light-grey">School Principal</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="rating-actions">
+      <div class="btn-group">
+        <button class="btn btn-round-10 btn-border bg-secondary">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="btn btn-round-10 bg-primary text-white btn2-border">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <button class="btn btn-round-10 bg-secondary text-primary btn2-border">
+        View All
+      </button>
+    </div>
+  </section>
+
+  <!-- 7TH SECTION - CTA -->
+  <section class="cta-section section-padding">
+    <div class="cta-content">
+      <div class="cta-text">
+        <p class="block">CTA Block</p>
+        <p class="main-heading">Ways To Partner With Play It Safe</p>
+        <p class="play">
+          Partner with Play It Safe!&reg; to educate, empower, and protect children
+          in your community.
+        </p>
+        <button class="btn btn-round-10 bg-primary text-white">
+          Button Goes Here
+        </button>
+      </div>
+      <div class="cta-img-wrap">
+        <img src="boy-hand-book.png" alt="Boy with Book">
+      </div>
+    </div>
+  </section>
+
+  <!-- 8TH SECTION -->
+  <section class="eight-sec section-padding bg-white">
+    <div class="eight-left bg-primary">
+      <img src="Group 238843.png" class="eight-img" alt="">
+    </div>
+    <div class="eight-right">
+      <div class="eight-logo-wrap">
+        <img src="the_womens_center_of_tarrant_county_logo 2-Photoroom.png" class="women" alt="Women's Center">
+      </div>
+      <h3 class="text-grey-3">The Women's Center</h3>
+      <h1 class="text-primary">
+        A History of Empowering Kids, Protecting Futures.
+      </h1>
+      <p>
+        Play it Safe!&reg; is a child abuse awareness and prevention program
+        developed by The Women's Center of Tarrant County, a leading organization
+        dedicated to addressing violence, crisis, and poverty. With decades of
+        experience, we understand the importance of equipping children, educators,
+        and families with resources that foster safety and confidence.
+      </p>
+      <button class="btn btn-md btn-round-10 bg-primary text-white">
+        Learn More <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- 9TH SECTION - STATS + CARD -->
+  <section class="section-padding">
+    <div class="nine-sec">
+      <div>
+        <h2 class="prices">100K <span class="text-mehroon">+</span></h2>
+        <p class="text-grey-3">Happy Readers</p>
+      </div>
+      <div>
+        <h2 class="prices">1.5K <span class="text-primary">+</span></h2>
+        <p class="text-grey-3">E-Books Available</p>
+      </div>
+      <div>
+        <h2 class="prices">5K <span class="text-dark-blue">+</span></h2>
+        <p class="text-grey-3">Authors Published</p>
+      </div>
+      <div>
+        <h2 class="prices">10K <span class="text-yellowish">+</span></h2>
+        <p class="text-grey-3">Reviews and Ratings</p>
+      </div>
+    </div>
+
+    <div class="nine-card-wrap">
+      <div class="nine-card bg-primary text-white">
+        <div>
+          <h2>Together, we can make a difference.</h2>
+          <p>
+            Play It Safe! &reg; was developed by The Women Center of Tarrant County.
+          </p>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-round-10 bg-primary text-white btn2-border">
+            View All
+          </button>
+          <button class="btn btn-round-10 bg-secondary text-primary btn4-border">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="line bg-primary"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer section-padding bg-white">
+    <div class="footer-main">
+      <div class="footer-left">
+        <img src="logo-Photoroom.png" class="play-safe" alt="Play It Safe Logo">
+        <p class="text-grey-3">
+          Play It Safe! &reg; empowers children and communities with tools to prevent
+          abuse, fostering safety and support through age-appropriate education.
+        </p>
+        <img src="the_womens_center_of_tarrant_county_logo 2-Photoroom.png"
+             class="women-center"
+             alt="Women's Center Logo">
+        <div class="social-icons">
+          <i class="fa-brands fa-google text-primary"></i>
+          <i class="fa-brands fa-facebook text-primary"></i>
+          <i class="fa-brands fa-twitter text-primary"></i>
+          <i class="fa-brands fa-linkedin text-primary"></i>
+        </div>
+        <p class="text-grey-5 reserved">
+          &copy; 2024 Play It Safe, All Rights Reserved | Website By Sovic Creative
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <p class="text-primary font-bold">About Us</p>
+          <p class="text-grey-5">Home</p>
+          <p class="text-grey-5">About Us</p>
+          <p class="text-grey-5">Contact Us</p>
+          <p class="text-grey-5">Blog</p>
+        </div>
+
+        <div>
+          <p class="text-primary font-bold">Quick Links</p>
+          <p class="text-grey-5">Browse E-Books</p>
+          <p class="text-grey-5">Best Sellers</p>
+          <p class="text-grey-5">Genres</p>
+          <p class="text-grey-5">Curriculums</p>
+        </div>
+
+        <div>
+          <p class="text-primary font-bold">Help</p>
+          <p class="text-grey-5">FAQ Center</p>
+          <p class="text-grey-5">Help Center</p>
+          <p class="text-grey-5">Schedule Request</p>
+          <p class="text-grey-5">Login</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-bottom text-grey-5">
+      Policy Terms &amp; Conditions
+    </p>
+  </footer>
+
+  <!-- MENU TOGGLE SCRIPT -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const leftMenu = document.getElementById('menu-left');
+    const rightMenu = document.getElementById('menu-right');
+    let isOpen = false;
+
+    toggleBtn.addEventListener('click', () => {
+      isOpen = !isOpen;
+      leftMenu.classList.toggle('show');
+      rightMenu.classList.toggle('show');
+      toggleBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-angle-down"></i>'
+        : '<i class="fa-solid fa-angle-right"></i>';
+    });
+  </script>
+</body>
+</html>

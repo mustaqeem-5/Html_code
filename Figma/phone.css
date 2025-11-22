@@ -1,0 +1,109 @@
+.body{
+    overflow: hidden;
+  }
+  .search-bar{
+    flex-direction: column;
+  }
+
+.logo{
+  padding-bottom: 30px;
+}
+.lk{
+  padding-bottom: 30px;
+}
+
+.hero-section{
+  /* background-color: red; */
+  flex-direction:column;
+}
+.hero-section h1{
+  font-size: 40px;
+}
+.about{
+  position: absolute;
+  left: 400px;
+}
+.button{
+  padding-bottom: 30px;
+}
+.img{
+  padding-left: 100px;
+}
+.second-section{
+  display: flex;
+  flex-direction:column;
+}
+.third-section{
+  flex-direction:column;
+  text-align:center;
+  align-items:center;
+}
+.cards{
+  flex-direction:column;
+  text-align:center;
+  align-items:center;
+  
+}
+.button{
+  padding-top:180px;
+}
+
+.curriculum{
+  flex-direction:column;
+  text-align:center;
+  align-items:center;
+}
+.mark{
+  position:absolute;
+  left:400px;
+  top:7980px;
+}
+.rating h1{
+  font-size:30px;
+}
+
+/* .up-img{
+  position:absolute;
+  left:00px;
+  top:n 12000px;
+} */
+/* 
+.women{
+  position:absolute;
+  top: 10px;
+  left:10px
+} */
+
+.eight-sec{
+  flex-direction:column;
+  background-color:red;
+}
+.eight-right{
+  padding-left: 80px;
+}
+.eight-right h1{
+  font-size: 30px;
+}
+
+.nine-second h2{
+  font-size: 30px;
+  text-align:center;
+  align-items:center;
+}
+
+.nine-second p{
+  font-size:20px;
+  text-align:center;
+  align-items:center;
+}
+.bt{
+  text-align:center;
+  align-items:center;
+}
+
+.last-sec{
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  
+}

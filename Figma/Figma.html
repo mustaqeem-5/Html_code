@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayItSafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Manrope.zip">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* --- Responsive --- */
+
+        @media (max-width: 425px) and (min-width: 320px) {
+            /* search-bar */
+            .search-bar{
+                flex-direction: column;
+                padding-left: 0;
+                margin-top: 0;
+                padding: 0;
+            }
+            .input-with-button{
+                padding-top: 10px;
+                padding-right: 50px;
+            }
+            
+            .input-with-button input{
+                width: auto ;
+            }
+             .menu-bar {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        padding-right: 30px;
+        padding-left: 0;
+      }
+       /* menu-bar */
+       
+       .menu-left,
+       .menu-right {
+         display: none;
+         flex-direction: column;
+         width: auto;
+         background-color: white;
+         padding: 10px 0;
+       }
+      .menu-left.show,
+      .menu-right.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        align-self: flex-end;
+      }
+
+      .menu-left a,
+      .menu-right a {
+        padding: 10px 20px;
+        border-top: 1px solid #E2E2E2;
+      }
+      .safe{
+        top: 58px;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: absolute;
+        left: 30px;
+        font-size: large;
+        align-items: center;
+      }
+      .logo-2 {
+        padding-left: 0;
+        text-align: left;
+      }
+
+      .menu-left a:hover {
+        background: #f2f2f2;
+      }
+      .hero-btn span{
+        padding: 8px;
+      }
+        }
+        
+
+        /* @media (min-width: 375px) and
+        (max-width: 1280px) {
+            .input-with-button input{
+                width:  auto ;
+            }
+        } */
+        @media (min-width: 426px) {
+          .menu-toggle {
+            display: none !important;
+          }
+        }
+        @media (min-width: 320px) and (max-width: 425px) {
+          .button{
+            display: none;
+          }
+        }
+
+    @media (max-width: 425px) and (min-width: 320px) {
+        /* hero-section */
+        .hero-section{
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+        .custom{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin: 0;
+        }
+        .hero-p{
+            padding: 0;
+        }
+        .left {
+            /* padding-left: 25px;
+            padding-right: 0; */
+        }
+        .Welcome{
+            padding-top: 0px;
+            font-size: medium;
+            margin: 0;
+        }
+        .left h1{
+            font-size: 30px;
+        }
+        .left p{
+            font-size: small;
+        }
+        .hero-btn{
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+        }
+        .hero-btn-1{
+        padding: 15px 20px;
+        border: none;
+        font-size: small;
+        }
+        .hero-btn-2{
+        padding: 15px 20px;
+        border: none;
+        font-size: small;
+        }
+        .hero-btn-5 {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        }
+        .span{
+            padding: 0;
+        }
+
+        /* marquee */
+        .marquee{
+            border-top: 1px solid #E2E2E2;
+            border-bottom: 1px solid #E2E2E2;
+        } 
+
+        /* second-section */
+        .second-section{
+            flex-direction: column;
+        }
+        .cent{
+            width: auto;
+            height: auto;
+        }
+        .cent h3{
+            font-size: large;
+        }
+        .cent p{
+            font-size: small;
+        }
+        .cent button{
+            padding: 15px 15px;
+            font-size: small;
+        }
+
+        /* third-section */
+        .third-img{
+            width: 280px;
+        }
+        .third-section{
+            flex-direction: column;
+        }
+        .third{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .third h1{
+            font-size: 30px;
+        }
+        .third p{
+            font-size: small;
+        }
+        .third h2{
+            font-size: medium;
+            padding-top: 0px;
+            margin: 0;
+
+        }
+        .issue{
+            font-size: medium;
+        }
+        .third button{
+            padding: 15px 25px;
+            font-size: small;
+        }
+
+        /* fourth-section */
+        .forth-section{
+            flex-direction: column;
+        }
+        .forth-section h1{
+            font-size: 30px;
+        }
+        .forth-section h2{
+            font-size: medium;
+             padding-top: 0;
+        }
+        .forth-section p{
+            font-size: small;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .cards{
+            flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            padding: 10px;
+        }
+        .card img{
+            position: absolute;
+            top: 10px;
+            width: auto;
+            height: 180px;
+            padding-left: 5px;
+            left: 6px;
+        }
+        .right{
+            flex-direction: column;
+            left: -60px;
+            padding-top: 0;
+            position: absolute;
+        }
+        .card h2{
+            font-size: medium;
+        }
+        .price{
+            font-size: small;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .right button{
+            padding: 15px 25px;
+            font-size: small;
+        }
+        .padding{
+            padding: 0;
+        }
+       .hero-btn-3{
+        padding: 10px;
+        font-size: small;
+       }
+       
+        /* curriculum */
+        .Curriculum{
+            flex-direction: column;
+        }
+        .curriculum{
+            text-align: center;
+            flex-direction: column;
+            font-size: medium;
+            padding: 0;
+        }
+        .curriculums h1{
+            font-size: 30px;
+            margin-top: 0;
+
+        }
+        .curriculums h2{
+            font-size: medium;
+            margin: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-top: 0;
+
+        }
+        .curriculums p{
+            font-size: small;
+        }
+        .curriculum img{
+            width: auto;
+            padding-top: 20px;
+        }
+        .curriculum button{
+            padding: 15px 20px;
+            font-size: small;
+        }
+
+        /* six-sec */
+        .ratings{
+            padding-top: 0px;
+        }
+        .rating{
+            padding-bottom: 0px;
+            padding-top: 65px;
+        }
+        .rating h1{
+            margin-top: 0;
+            padding-left: 25px;
+            font-size: small;
+            padding-right: 15px;
+        }
+        .rating p{
+            margin-bottom: 0;
+            padding-top: 10px;
+            padding-left: 25px;
+            font-size: xx-small;
+        }
+        .rating-btn{
+            padding-left: 0;
+            position: absolute;
+            top: 5385px;
+            right: 10px;
+        }
+        .rating-btn-2{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .rating-btn-1{
+            padding-left: 10px;
+        }
+        .rate{
+            padding: 15px 0px;
+        }
+        .mark{
+            width: auto;
+            height: 120px;
+            padding: 0px;
+            font-size: 5px;
+        }
+        .mark p{
+            font-size: small;
+            padding-left: 5px;
+            text-align: left;
+            margin-top: 0;
+        }
+        .mark h2{
+            font-size: xx-small;
+            margin-bottom: 0;
+            padding-left: 5px;
+        }
+        .mark h3{
+            font-size: xx-small;
+            margin-top: 0;
+            padding-left: 5px;
+        }
+        .icon{
+            padding-top: 5px;
+            padding-left: 5px;
+            font-size: 7px;
+        }
+
+        /* seven-sec */
+        .seven-sec{
+            flex-direction: column;
+            padding: 0px;
+            padding-top: 65px;
+
+            
+        }
+        .child-learn{
+            padding-top: 20px;
+            width: auto;
+            position: absolute;
+            left: 10px;
+            background-color: #0065a5;
+            opacity: 0.9;
+            z-index: -1;
+            
+        }
+        .block{
+            font-size: small;
+            padding-top: 50px;
+            padding-bottom: 5px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .main-heading{
+            font-size: 10px;
+            /* padding-left: 20px; */
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .play{
+            font-size: xx-small;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* padding-left: 20px; */
+        }
+        .txt-img {
+            padding-left: 20px;
+        }
+        .txt-img button{
+            padding: 10px 10px;
+            background-color: #0065a5;
+        }
+        .up{
+            width: auto;
+            position: absolute;
+            right: 0;
+            top: 5362px;
+        }
+
+        /* eight-sec */
+        .eight-sec{
+            flex-direction: column;
+            padding-top: 0px;
+        }
+        .eight-img {
+            width: 260px;
+        }
+        .eight-right-div{
+            text-align: center;
+            
+        }
+        .eight-right{
+        }
+        
+        .eight-right h3{
+            font-size: medium;
+            padding: 0;
+            margin: 0;
+        }
+        .eight-right h1{
+            font-size: 30px;
+        }
+        .eight-right p{
+            font-size: small;
+            align-items: center;
+        }
+        .eight-right button{
+            padding: 15px 20px;
+            font-size: small
+        }
+        .eight-right-btn{
+            padding-bottom: 0;
+        }
+        .women{
+           width: auto;
+           padding: 10px;
+           position: absolute;
+           top: 5880px;
+        }
+
+        /* nine-sec */
+        .nine-sec{
+            flex-direction: row;
+        }
+        .nine-sec h2{
+            font-size: medium;
+            margin-top: 0;
+        }
+        .nine-sec p{
+            font-size: small
+        }
+
+        .nine-second-fst{
+        }
+        .nine-second{
+            flex-direction: column;
+            width: auto;
+            padding-left: 25px;
+            align-items: center;
+        }
+        .nine-second h2{
+            font-size: 20px;
+        }
+        .nine-second p{
+            font-size: small;
+            padding-left: 15px;
+        }
+        .bt{
+            padding: 15px;
+            flex-direction: row;
+        }
+        .btn-1{
+            padding: 15px 25px;
+            font-size: small;
+        }
+        .btn-0{
+            padding: 15px 13px;
+        }
+
+        /* last-sec */
+        .ls{
+            padding: 0;
+        }
+        .last-sec{
+            flex-direction: column;
+        }
+        .last-sec-1{
+        }
+        .play-safe{
+            width: auto;
+        }
+        .play-safe-1{
+            padding-left: 0px;
+            width: auto;
+            padding-top: 10px;
+        }
+        .last-sec p{
+            font-size: medium;
+            margin-top: 40;
+            padding: 0px;
+        }
+        .women-center{
+            width: auto;
+            padding-top: 0px;
+        }
+        .google{
+            padding-left: 10px;
+        }
+        .font-icon{
+            font-size: small;
+        }
+        .reserved{
+            margin: 0;
+            padding-top: 10px;
+            font-size: medium;
+        }
+        .last-right{
+            padding-top: 65px;
+        }
+        .last-right p{
+            padding-top: 0;
+            padding-left: 20px;
+            font-size: xx-small;
+        }
+        .last-right-1{
+        }
+        .last-work{
+            position: absolute;
+            top: 7220px;
+            font-size: xx-small;
+            margin: 0;
+            padding: 20px;
+        }
+        .hero-btn-5 span{
+            padding: 8px;
+        }
+        
+    }
+
+
+  @media screen and (min-width:320px) and (max-width:425px){
+    .logo, .but, .img, .fst-img, .text-img, .child-learning, .sec-img, .input-with-button, .ratings, .seven-sec, .women, .reviews-section, .last-work {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 426px) {
+    .safe, .logo-2, .child-learn, .up, .txt-img {
+        display: none;
+    }
+  }
+  @media screen {
+    .safe{
+        
+    }
+  }
+
+body{
+    /* width: 99.9%; */
+    display: inline-block;
+    
+  }
+  .all-sec{
+    max-width: 1350px ;
+    margin: 0 auto;
+  }
+
+    </style>
+</head>
+
+
+<body>
+    <!-- <center> -->
+    <div class="all-sec">
+        <!-- offer bar -->
+        <div class="bg-primary text-white p-2 text-center up-div">
+            All books at least 50% off list prices every day
+        </div>
+
+        <!-- search bar -->
+        <div class="bg-secondary p-2 pr-10 pl-10 search-bar">
+            <div class="logo ">
+                <img src="logo-Photoroom.png">
+            </div>
+            
+            <div class="pl-4 but">
+                <button class="btn btn-sm bg-primary p-2 pl-4 text-white btn-round-50 ">
+                    For Schools / Organizations
+                </button>
+                <span class="text-light-grey pl-2 pr-2">|</span>
+                <button class="btn btn-sm bg-secondary text-primary">
+                    For Parents/Individuals
+                </button>
+            </div>
+            <div class="input-with-button pl-1">
+                <input class="btn text-grey-5  btn-round-50 search-box" placeholder="Search Products..">
+            <div class="bt">
+                <button class="btn btn-sm bg-primary text-white btn-round-50 "> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>    
+            </div>
+            <div class="but">
+                <button class="btn btn-sm bg-secondary text-grey-5  ">
+                    ENG <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <span class="text-light-grey">|</span>
+                <button class="btn btn-sm bg-secondary text-grey-5">
+                    Login <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- menu-bar -->
+        <div class="menu-bar p-4  pl-10">
+            <!-- Arrow Icon -->
+            <div class="menu-toggle text-primary" id="menu-toggle">
+                <i class="fa-solid fa-angle-right "></i>
+            </div>
+
+            <div>
+                <p class="safe text-primary font-size-6 font-weight-1 text-left font-bold">Play It Safe! &reg;</p>
+            </div>
+
+            <!-- Left Menu -->
+            <div class="menu-left" id="menu-left">
+                
+                <div class="logo-2 pl-6">
+                    <img src="logo-Photoroom.png" class="play-safe-1">
+                </div>
+                
+            <a>Home</a>
+            <a>Shop <i class="fa-solid fa-angle-down"></i></a>
+            <a>About <i class="fa-solid fa-angle-down"></i></a>
+            <a>The Issue <i class="fa-solid fa-angle-down"></i></a>
+            <a>Curriculum <i class="fa-solid fa-angle-down"></i></a>
+            <a>Tarrant Country Scheduling Request</a>
+            </div>
+
+            <!-- Right Menu -->
+            <div class="menu-right pl-9" id="menu-right">
+            <a>Contact Us:</a>
+            <a class="menu-right-info">info@playitsafe.org</a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <div class="hero-section">
+            <!-- left -->
+            <span class="left custom cover">
+                <p class="Welcome text-grey-3 font-size-4 font-bold hero-section-heading-2">Welcome to Play It Safe!<sup>&reg;</sup>
+                </p>
+                <h1 class="font-size-2 font-weight-4 hero-section-heading-2 text-primary">Empowering  Children To Stay Safe
+                </h1>
+                <p class="font-size-8">Providing age-appropriate abuse prevention education
+                    <br> from pre-K to high school.
+                </p>
+                <div class="hero-btn-5 hero-section-btn-1">
+                    <div class="hero-p b-4">
+                    <button class="hero-btn-1 btn btn-md btn-round-10 text-white bg-primary px-7 py-4 p-2">
+                        Shop Now <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    </div>
+                    <span class="px-14"></span>
+                    <div class="about">
+                    <button class="hero-btn-2 btn btn-md btn-round-10 text-white bg-primary px-7 py-4  p-2 ">
+                        About us <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    </div>
+                </div>
+            </span>
+
+            <!-- right -->
+            <div class="img">
+                <img src="kid.png" >
+            </div>
+        </div>
+
+        <!-- marquee -->
+        <div>
+            <marquee direction="right" class="marquee text-primary item-center text-center">
+                <h3>
+                <a><i class="fa-solid fa-asterisk"></i> 15,254 total books
+                </a>
+                <a class="pl-4"><i class="fa-solid fa-asterisk"></i> 1,258 authors
+                </a>
+                <a class="pl-4"><i class="fa-solid fa-asterisk"></i> 20,898 books sold
+                </a>
+                <a class="pl-4"><i class="fa-solid fa-asterisk"></i> 97% happy customer
+                </a>
+                <a class="pl-4"><i class="fa-solid fa-asterisk"></i> 15,254 total books
+                </a>
+                <a class="pl-4"><i class="fa-solid fa-asterisk"></i> 1,258 authors 
+                </a>        
+                </h3>
+            </marquee>
+        </div>
+
+        <!-- Second-section -->
+        <div class="second-section ">
+            <div class="fst-img">
+                <img src="boys.jpg" height="450px">
+            </div>
+            
+            <div class="bg-primary custom cent text-white p-7">
+                <h3 class="font-size-7 hero-section-heading-3">
+                    One Grade Level at a Time 
+                    One Classroom Level at a Time
+                </h3>
+                <p class="font-weight-2">
+                    Play it safe! <sup>&reg;</sup> offers a reddy-to-teach, one-hour Curriculum with all materials included for easy implementation by  educators or conselors.
+                </p>
+                <div class="pt-4">
+                    <button class="btn btn-md btn-round-10 text-primary bg-white p-4 px-7">
+                        Our Mission
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="sec-img">
+                <img src="girl.png" width="300px" height="450px">
+            </div>
+        </div>
+
+        <!-- Third-section -->
+        <section class="third-section cover custom  bg-white">
+            <!-- left -->
+            <div>
+                <img src="Group .png" class="third-img  ">
+            </div>
+
+            <!-- right -->
+            <div class="third">
+                <h2 class="m issue text-grey-3 font-size-7 font-weight-1 ">About to Issue</h2>
+                <h1 class="m text-primary font-size py-2">Every Child <br> Deserves To Feel Safe</h1>
+                <p class="py-2 m">Child abuse is a pervasive issue affecting communities  worldwide. It transcends socioeconomic boundaries, leaving a  lasting impact on the physical, emotional, and mental well-being  of children. At Play it Safe!, we're committed to empowering  children and the adults in their lives with the tools to recognize, prevent, and respond to abuse.
+                </p>
+                <button class=" btn btn-md btn-round-10 text-white p-2 px-5 py-4  bg-primary">
+                    The Issue <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- 4rth section -->
+        <section class="forth-section custom py-7">
+            <!-- upper-div -->
+            <div class=" ">
+                <h2 class="m text-center text-grey-3 font-size-7 font-weight-1 ">Our Shop</h2>
+                <h1 class="m text-center text-primary font-bold font-size-2 ">Our Best Sellers</h1>
+                <p class="text-center font-size-8">Explore our top-selling e-books that readers cant's get enough of! These titles are flying off the virtual shelves andare a must-read for any book lover.
+                </p>
+            </div>
+            <!-- lower-div -->
+            <div class="cards ">
+
+                <div class="card bg-white item-center pl-6">
+                    <img src="child.png" class="four-img" alt="Bentley’s Big Production" >
+                    <div class="right">
+                        <div class="card-content">
+                            <h2>Bentley’s Big <br> Production</h2>
+                            <p>Elementary</p>
+                            <div class="price">$229</div>
+                            <button class="btn-2"><i class="fa-solid fa-cart-shopping"></i>Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white item-center pl-6">
+                    <img src="dog.png" alt="Tick Tock Plays it Safe!" class="four-img">
+                    <div class="right">
+                        <div class="card-content">
+                            <h2>Tick Tock Plays it  Safe!</h2>
+                            <p>Pre-K</p>
+                            <div class="price">$229</div>
+                            <button class="btn-2"><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hero-btn pl-10">
+                <div class="">
+                    <button class="btn btn-border hero-btn-3 btn-sm btn-round-10 p-4 btn-border bg-secondary">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <span class="pl-2"></span>
+                    <button class="btn hero-btn-3 btn-sm btn-round-10 p-4 bg-primary btn2-border text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <span class="pl-23"></span>
+                <div class="">
+                    <button class="btn hero-btn-3 btn-md btn-round-10 btn2-border text-primary px-5 bg-secondary py-4">
+                        View All
+                    </button>
+                    <span class="pl-2"></span>
+                    <button class="btn hero-btn-3 btn-sm btn-round-10 p-4 bg-primary btn2-border text-white ">
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 5th section -->
+        <section class="bg-white custom cover Curriculum">
+            <div class="curriculums ">
+                <h2 class="m text-center text-grey-3 font-size-7 font-weight-1 curriculum">Curriculums</h2>
+                <h1 class="m text-center text-primary font-size">Curriculums by Grade</h1>
+                <p class="text-center font-size-8 curriculum-p">Explore our top-selling e-books that readers cant's get enough of! These titles are flying off the virtual shelves and are a must-read for any book lover.</p>
+            </div>
+            
+            <div class="curriculum">
+                <div class="text-center padding px-6">
+                    <img src="litttle-kids.png" class="pb-4">
+                    <div class="btn3-border pb-4 ">
+                        <p class="text-primary">Pre-K</p>
+                        <p class="text-light-grey">This science fiction genre
+                            <br> explore imaginative and
+                            <br> futuristic...
+                        </p>
+                        <button class="btn btn-md btn-round-10 p-4 px-5 bg-primary text-white">See Collection</button>
+                    </div>
+                </div>
+
+                <div class=" text-center padding padding px-6">
+                    <img src="teach.png" class="pb-4">
+                    <div class="btn3-border pb-4">
+                        <p class="text-primary">Elementry</p>
+                        <p class="text-light-grey">This science fiction genre
+                            <br> explore imaginative and
+                            <br> futuristic...
+                        </p>
+                        <button class="btn btn-md btn-round-10 p-4 px-5 bg-primary text-white">See Collection</button>
+                    </div>
+                </div>
+
+                <div class=" text-center padding px-6">
+                    <img src="girl-board.png" class="pb-4">
+                    <div class="btn3-border pb-4">
+                        <p class="text-primary">Middle School</p>
+                        <p class="text-light-grey">This science fiction genre
+                            <br> explore imaginative and
+                            <br> futuristic...
+                        </p>
+                        <button class="btn btn-md btn-round-10 p-4 px-5 bg-primary text-white">See Collection</button>
+                    </div>
+                </div>
+
+                <div class=" text-center padding px-6 ">
+                    <img src="student.png" class="pb-4">
+                    <div class="btn3-border  pb-4">
+                        <p class="text-primary">High School</p>
+                        <p class="text-light-grey">This science fiction genre
+                            <br> explore imaginative and
+                            <br> futuristic...
+                        </p>
+                        <button class="btn btn-md btn-round-10 p-4 px-5 bg-primary text-white">See Collection</button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 6th section -->
+        <section class="reviews-section">
+            <div class="reviews-bg">
+                <div class="reviews-text pl-6 pb-4">
+                    <p class="small-title">Proof Point</p>
+                    <h1 class="big-title">Our Product <br> Reviews</h1>
+                </div>
+                
+                <div class="mark">
+                    <i class="fa-solid fa-circle text-grey-8 icon"></i>
+                    <i class="fa-solid fa-star text-red"></i>
+                    <i class="fa-solid fa-star text-red"></i>
+                    <i class="fa-solid fa-star text-red"></i>
+                    <i class="fa-solid fa-star text-red"></i>
+                    <i class="fa-solid fa-star text-red pr-5"></i>
+                    <i class="fa-solid fa-quote-left text-grey-8 icon"></i>
+                    <p class="review-text ">"The online book fairs are fantastic! I've <br> discovered so many authors."</p>
+                    <h2 class="text-primary">Mark R.</h2>
+                    <h3 class="text-light-grey">School Principal</h3>
+                </div>
+            </div>
+            <div class="hero-btn ">
+                <div class="rating-btn-1 pt-7 pl-6">
+                    <button class="btn btn-sm btn-round-10 p-4 btn-border bg-secondary ">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <span class="pl-2"></span>
+                    <button class="btn btn-sm  btn-round-10 p-4 bg-primary btn2-border text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            
+                <div class="rating-btn pt-7 pl-23">
+                    <button class="btn rating-btn-2 btn-md btn-round-10 btn2-border text-primary px-8 bg-secondary py-4">
+                        View All
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7th section -->
+        <section class="cover-1 pb-8 seven-sec">
+            <!-- only responsive -->
+            <div><img src="kid-learn.png" alt="" class="child-learn"></div>
+            <div >
+            <div class="txt-img text-white">
+                <p class="block">CTA Block</p>
+                <p class="main-heading">Ways To Partners With Play It Safe</p>
+                <p class="play">Partner with Play It Safe!&REG; to <br> educate,empower,and protect <br> children in your community." 
+                </p>
+                <button class="btn4-border bg-primary text-white py-4 px-8 btn-round-10">Button Goes Here</button>
+            </div>
+            <div>
+                <img src="boy-hand-book.png" class="up">
+            </div>
+            </div>
+            <!-- end -->
+            <div class="child-learning" >
+                <div class="text-img bg-primary">
+                    <div class="pl-5 pt-6 text-white">
+                        <p class="m">CTA Block</p>
+                        <p class="font-size-2 hero-section-heading-2">Ways To <br> Partners With <br> Play It Safe</p>
+                        <p class="pb-5 font-weight-2">Partner with Play It Safe!&REG; to educate,empower,and protect <br> children in your community." 
+                        </p>
+                        <div class="pb-5">
+                            <button class="btn4-border bg-primary text-white py-4 px-8 btn-round-10">Button Goes Here</button>
+                        </div>
+                    </div>
+                    <div class="up-img">
+                        <img src="boy-hand-book.png">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 8th section -->
+        <section class="eight-sec bg-white">
+            <div class=" l-bg bg-primary p">
+                <img src="Group 238843.png" class="eight-img cover custom">
+            </div>
+            <div class="eight-right-div custom  pl-16 ">
+                <div class="eight-right ">
+                    <div class="eight-right-img">
+                    <img src="the_womens_center_of_tarrant_county_logo 2-Photoroom.png" class="women">
+                    </div>
+                    <h3 class="text-grey-3 font-size-8 font-weight-3 m">The Women's Center</h3>
+                    <h1 class="text-primary font-size m">A History of  <br> Empowering Kids, <br> Protecting Futures.
+                    </h1>
+                    <p class="btn-md">Play it Safe!&reg; is a child abuse awareness and prevention program <br>
+                        developed by The Women's Center of Tarrant County, a leading <br>
+                        organization dedicated to addressing violence, crisis, and <br>
+                        poverty. With decades of experience, we understand the <br>
+                        importance of equipping children, educators, and families with <br>
+                        resources that foster safety and confidence
+                    </p>
+                    <div class="eight-right-btn ">
+                        <button class="btn btn-md btn-round-10 px-5 py-4 bg-primary text-white">
+                            Learn More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9th section -->
+        <section class="custom cover">
+            <div class="nine-sec pb-5  text-center ">
+                <div>
+                    <h2 class="font-size-6 prices  hero-section-heading-1 m">100K <span class="text-mehroon">+</span></h2>
+                    <p class="text-grey-3 font-size-4 m ">Happy Readers</p>
+                </div>
+                <div>
+                    <h2 class="font-size-3 prices hero-section-heading-1 m">1,5K <span class="text-primary">+</span></h2>
+                    <p class="text-grey-3 font-size-4 m">E-Books Available</p>
+                </div>
+                <div>
+                    <h2 class="font-size-3 prices hero-section-heading-1 m">5K <span class="text-dark-blue">+</span></h2>
+                    <p class="text-grey-3 font-size-4 m">Authors Published</p>
+                </div>
+                <div>
+                    <h2 class="font-size-3 prices hero-section-heading-1 m">10K <span class="text-yellowish">+</span></h2>
+                    <p class="text-grey-3 font-size-4 m">Reviws and Rating</p>
+                </div>
+            </div>
+            <div class="nine-second-fst padding pl-4">
+                <div class="nine-second bg-primary text-white p-6   btn2-border btn-round-10">
+                    <div>
+                        <h2 class="font-size-6 m">Together,we can <br> make a difference.</h2>
+                    </div>
+                    <div>
+                        <p class="pl-7 font-weight-2 font-size-5 m">Play It safe! &reg; Was developed by <br>
+                        The Women Center of Tarrant <br> County.
+                        </p>
+                    </div>
+                    <div class="pl-9 bt">
+                        <button class="btn-1 btn btn-md btn-round-10 btn2-border text-white px-8 bg-primary btn4-border py-4">
+                            View All
+                        </button>
+                        <span class="pl-2"></span>
+                        <button class="btn-0 btn btn-sm btn-round-10 btn4-border p-4 bg-secondary text-primary ">
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="line bg-primary p-2 ">
+
+        </div>
+
+        <!-- Last section -->
+        <section class="bg-white lsfont-size-8 cover custom">
+            <div class="last-sec ">
+                <div class="last-sec-1 ">
+                    <img src="logo-Photoroom.png" class="play-safe">
+                    <p class="text-grey-3 font-size-8">Play It Safe! &reg;, we empower children and
+                        <br> communities with tools to prevent abuse,
+                        <br> fostering saftey and support through age-
+                        <br>appropriate education. 
+                    </p>
+
+                    <img src="the_womens_center_of_tarrant_county_logo 2-Photoroom.png" class="pt-9 women-center">
+                    <i class="fa-brands fa-google pl-8 text-primary font-size-7 item-center google font-icon"></i>
+                    <i class="fa-brands fa-facebook pl-4 text-primary font-size-7 font-icon"></i>
+                    <i class="fa-brands fa-twitter pl-4 text-primary font-size-7 font-icon"></i>
+                    <i class="fa-brands fa-linkedin pl-4 text-primary font-size-7 font-icon"></i>
+                    <p class="text-grey-5 font-size-5 reserved">&copy; 2024 Play It Safe, All Right Reserved | Website By Sovic Creative
+                    </p>
+                </div>
+                <!-- <div class="pt-4 last-right"> -->
+                <span class="last-right-1 ">
+                    <p class="text-primary pl-21 font-size-4 font-bold">About Us</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Home</p>
+                    <p class="text-grey-5 pl-21 font-size-8">About Us</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Contact Us</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Blog</p>
+                </span>
+
+                <span class="last-right-1">
+                    <p class="text-primary pl-21 font-size-4 font-bold">Quick Links</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Browse E-Books</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Best Sellers</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Genres</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Curriculums</p>
+                </span>
+
+                <span class="last-right-1">
+                    <p class="text-primary pl-21 font-size-4 font-bold">Help</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Faq Center</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Help Center</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Schedule Request</p>
+                    <p class="text-grey-5 pl-21 font-size-8">Login</p>
+                
+                </span>
+                <!-- </div> -->
+                <p class="last-work text-grey-5 "> Policy Terms & Condition
+            </p>
+            </div>
+        </section>
+
+        <div class="bg-secondary p-4">
+        </div>
+    </div>
+    </center>
+</body>
+
+</html>
+        <script>
+            const toggleBtn = document.getElementById('menu-toggle');
+            const leftMenu = document.getElementById('menu-left');
+            const rightMenu = document.getElementById('menu-right');
+            let isOpen = false;
+
+            toggleBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            leftMenu.classList.toggle('show');
+            rightMenu.classList.toggle('show');
+
+            // Change arrow direction
+            toggleBtn.innerHTML = isOpen
+                ? '<i class="fa-solid fa-angle-down"></i>'
+                : '<i class="fa-solid fa-angle-right"></i>';
+            });
+        </script>
