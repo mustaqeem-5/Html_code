@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+.w3schools_logo {
+    height: 38px;
+    width: 35px;
+    cursor: pointer; 
+    padding: 8px 16px;   
+}
+
+.w3schools_logo img{
+    width: 180%;
+    height: 40px;
+}
+
+.navbar {
+    font-family: "Source Sans Pro Topnav", sans-serif;
+    display: flex;
+    font-weight: 400;
+    flex-direction: row;
+    font-size: 16px;
+    height: 54px;
+    background-color: #FFFFFF; 
+    color: #000000;
+    cursor: pointer; 
+}   
+
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.navbar-left a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar-left > a:hover{  
+    background-color: #04AA6D;
+    color: #f1f1f1; 
+    padding: 15px;
+
+}
+
+.search-icon {
+    width: 250px;
+}
+
+.search-icon input {
+    width: 50%;
+    padding: 8px 35px 9px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;  
+}
+
+.search-icon :hover {
+    background-color: #f1f1f1;
+    color: #000000;
+}
+.circle{
+    padding: 0%;
+    margin: 0%;
+}
+
+.navbar-right {
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    text-align: right;
+    font-size: 16px;
+    justify-content: space-between;
+    width: 500px;
+    padding-left: 100px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar-right > a:hover{  
+    background-color: #f1f1f1;
+    color: #000000;
+    padding: 8px; 
+    border-radius: 20px;
+}
+
+.button{
+    padding: 11px 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: #959595 0px 1px 5px;
+    cursor: pointer;
+}
+
+.button {
+    color:white;
+    background-color: #04AA6D;
+}
+
+.button:hover{
+    background-color: #006e46;
+    box-shadow: #dad8d8 0px 1px 5px;
+}
+
+.hr-navbar {
+    font-family:"Source Sans Pro", sans-serif;
+    height: 40px;
+    background-color: #282A35;
+    font-weight: 400;
+    font-size: 15px;
+    color: #f1f1f1;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hr-navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.hr-navbar :hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+
+.bottom {
+    background-color: #282A35;
+    height: 550px;
+    text-align: center;
+    align-items: center;
+}
+
+.bottom-item {
+    font-family:"Source Sans Pro", sans-serif;
+    padding:25px 400px;
+    padding-top: 80px;
+    color: #f1f1f1;
+    font-size: 70px;
+}
+
+.bottom-item-para {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #dbce66;
+    font-size: 23px;
+    padding: 0px 450px;
+}
+
+.bottom-item-input {
+    padding: 20px 450px;
+    width: 500px;
+}
+
+.text-input{
+    font-family:"Source Sans Pro", sans-serif;
+    padding: 11px 50px 11px 15px;
+    border-radius: 20px;
+    font-size: 17px;
+    width: 300px;
+    border: 1px solid #5a5858;
+    outline: none;
+    display: inline-block;
+    position: relative;
+}
+
+.bottom-item-line {
+    font-family:"Source Sans Pro", sans-serif;
+    font-size: 25px;
+    padding: 20px 500px;
+    color: #f1f1f1;
+    text-decoration: underline;
+    cursor: pointer; 
+    align-items: center
+}

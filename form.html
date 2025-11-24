@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset>
+        <option value="Pencil">Pencil</option>
+        <option value="scale">Scale</option>
+        <option value="sharpnear">Sharpnear</option>
+        </datalist> <br>
+        <legend>My Form:</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name">  <br> <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"> <br> <br>
+        <label for="caste">caste:</label>
+        <input type="text" id="caste" name="caste"><br>        
+        <label for="favcolor">Choose your Fav Color:</label>
+        <input type="color" id="favcolor" name="favcolor"> <br>
+        <label for="birthday">your Birthday:</label> 
+        <input type="date" name="birthday" id="birthday"> <br>
+        <label for="datemin">Enter a Date after 2000-01-01: </label>
+        <input type="date" name="datemin" id="datemin" min="2000/1/1">
+        <label for="datemax">Enter a Date before 1980-01-01:</label>
+        <input type="date" name="datemax" id="datemax" max="1979-12-31"> <br>
+        <label for="date and time">Date And Time:</label>
+        <input type="datetime-local" name="date and time" id="date and time"> <br>
+        <label for="">Gender:</label>
+        <input type="radio" name="Gender:" value="Male"> Male
+        <input type="radio" name="Gender:" value="Female"> Female <br>
+        <label for="email">Enter your Email:</label>
+        <input type="email" name="email" id="email"> <br>
+        <input type="checkbox" name="Class1" value="HSC|"> HSC| <br>
+        <input type="checkbox" name="Class2" value="HSC||"> HSC||  <br>
+        <label for="bikes">Choose a Bikes:</label>
+        <select name="bikes" id="bikes">  
+        <option value="CD 70">CD 70</option>
+        <option value="125" selected>125</option> 
+        <option value="Unique">Unique</option>
+        <option value="Express">Express</option>
+        </select><br>  <br>
+        <input list="Stationary" name="Stationary">
+        <datalist id="Stationary">
+        <option value="Ink Pen">Ink Pen</option> 
+        <option value="Bol Pen">Bol Pen</option>
+        <h1>Text Area:-</h1>
+        <textarea name="message" rows="10" cols="30" placeholder="Type Here..."></textarea><br>
+        0
+        <input type="range" id="a" name="a" value="50">
+        100+
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output><br> <br>
+        <input type="image" src="logo.png" alt="W3-School" width="100" id="150"> <br>
+        <label for="myfile">Select a File:</label>
+        <input type="file" name="myfile" id="myfile"> <br>
+        <label for="flname">Full Name:</label>
+        <input type="text" name="flname" id="flname"> <br>
+        <input type="hidden" name="custid" id="custid" value="3487"> 
+        <label for="month">Month and Year:</label>
+        <input type="month" name="month" id="month"> <br>
+        <label for="quantity">Quantity between 1 to 100:</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="100" step="0.1" value="55"> <br>
+        <label for="vol">Volume:</label>
+        <input type="range" name="vol" id="vol" min="0" max="50"> <br>
+        <label for="gsearch">Google Search:</label>
+        <input type="search" name="gsearch" id="gsearch"> <br>
+        <label for="phone">Enter a Telephone Number:</label>
+        <input type="tel" name="phone" id="phone" pattern=""> <br>
+        <label for="time">Select a Time:</label>
+        <input type="time" name="time" id="time" step="1"> <br>
+        <label for="homepage">Add your Homepage:</label>
+        <input type="url" name="homepage" id="homepage" required> <br>
+        <label for="week">Select a Week:</label>
+        <input type="week" name="week" id="week"> <br>
+        <!-- <button type="button" onclick="alert('submit')">submit</button> -->
+        <input type="submit" value="submit"><br>
+        <input type="reset" value="reset">
+        </fieldset>
+    </form>
+</body>
+</html>
